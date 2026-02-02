@@ -1,0 +1,6 @@
+f1=open("c1.txt","a")
+f2=open("c2.txt","r")
+f1.write("\n")
+f1.write(f2.read())
+f1.close()
+f2.close()
