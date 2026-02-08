@@ -1,22 +1,6 @@
-file = open("codingal.txt", "r")
+f1=open("codingal.txt","r")
 print("file is in read mode")
-content = file.read()
-lines = content.split("\n")
-file.close()
-file1 = open("c2", "w")
-file1.close()
-file1 = open("c2", "a")
-for i in lines:
-    word = ""
-    for j in i:
-        if j == " ":
-            break
-        word = word + j
-
-    if word != "Coding" and word != "Codingal":
-        print(i)
-        file1.write(i)
-        file1.write("\n")
-
-file1.close()
-
+f2=open("codingal.txt","a")
+print("file is in append mode")
+f3=open("codingal","w")
+print("file is in write mode")
